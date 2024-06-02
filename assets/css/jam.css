@@ -1,0 +1,347 @@
+* {
+	font-family: "Poppins";
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+} */
+
+/* ======= button style ======= */
+.header {
+	display: flex;
+	/* background-color: salmon; */
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+.header .button-group {
+	display: flex;
+	flex-direction: column;
+	align-self: auto;
+}
+.header .button-group button {
+	width: 150px;
+	margin-bottom: 1rem;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+	/* height: 1rem; */
+}
+
+/* ======= END OF BUTTON STYLE ========= */
+
+/* ========= TABLE STYLING ======== */
+
+.body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* background-color: blue; */
+}
+.body .header{
+	margin-bottom: 0.5rem;
+	width: 70rem;
+	/* background-color: aliceblue; */
+}
+.bottom{
+	width: 70rem;
+}
+table tr td {
+	width: 5rem!important;
+	/* background-color: red; */
+	text-align: left;
+}
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
+  }
+.cover{
+	width: 70rem;
+	/* background-color: yellow; */
+	height: 30rem;
+	/* padding: 2rem; */
+	overflow-x: auto;
+	overflow-y: scroll;
+	margin-bottom: 1rem;
+}
+.my-table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+	/* overlay: scroll; */
+	overflow: scroll;
+	margin-top: 0;
+	/* background-color: yellow; */
+}
+
+th, thead{
+	border-color: black;
+	/* border: solid; */
+	z-index: 1;
+}
+thead tr th{
+	border-collapse: separate;
+}
+td {
+	/* width: 5rem; */
+} 
+thead{
+	background-color: aliceblue;
+	border-color: none;
+	/* border: solid; */
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	/* border-bottom: 2px solid black; */
+}
+/* table tr {
+	overflow: hidden;
+	width: 80%;
+}
+/* ========= END OF TABLE STYLING ======== */
+
+/* ====== STYLING FORM ABSEN ======= */
+.container-jam {
+	background-color: rgb(206, 212, 255);
+	width: 100%;
+	height: 100vh;
+	display: none;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	flex-direction: column;
+	align-items: center;
+	z-index: 3;
+}
+.container-jam .form-absen {
+	background-color: white;
+	width: max-content;
+	padding: 2rem 3rem;
+	/* margin-top: 2rem; */
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	border-radius: 0.5rem;
+}
+.container-jam .form-absen .card {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+.container-jam .form-absen .card .action-button {
+	margin-left: 5rem;
+}
+.container-jam .form-absen .card .action-button input {
+	width: 2rem;
+	cursor: pointer;
+}
+.form-absen hr {
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	border: none;
+	/* border: 1px 0 0 0; */
+	border-top: 1px solid black;
+}
+
+.btn-isi {
+	background-color: rgb(139, 255, 139);
+	color: rgb(0, 124, 0);
+	border: none;
+	height: 100%;
+	border-radius: 0.2rem;
+}
+.list-nama {
+	text-decoration: none;
+	color: black;
+	/* margin-top: ; */
+}
+
+/* ====== END OF STYLING FORM ABSEN ======= */
+
+.containerdatabaru {
+	background-color: rgb(206, 212, 255);
+	justify-content: center;
+	align-items: center;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+/* ==========  UBAH DATA ABSEN JAM ========== */
+.form-ubah-absen-jam {
+	height: fit-content;
+	width: 50%;
+	/* padding: 0 2rem; */
+	border-radius: 0.5rem;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	background-color: rgb(242, 242, 242);
+	color: rgb(36, 36, 36);
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	/* margin-top: 2rem; */
+}
+.header_ubah_absen_jam {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 0px;
+	/* background-color: salmon; */
+	float: right;
+}
+.header_ubah_absen_jam a {
+	font-family: arial;
+}
+.header-form {
+	/* background-color: blue; */
+	display: flex;
+	width: 90%;
+	justify-content: center;
+}
+.header-form h1 {
+	width: 90%;
+	/* background-color: blue; */
+	/* background-color: white; */
+}
+.group-input {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 5px;
+}
+.input-form {
+	width: 90%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	padding-left: 5px;
+	/* color: red; */
+}
+.input-ubah-data {
+	width: 20%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	padding-left: 5px;
+}
+.btn-selesai {
+	width: 90%;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: rgb(255, 133, 133);
+	color: white;
+	height: 30px;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 14px;
+	color: white;
+}
+.close {
+	position: relative;
+	margin-left: auto;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	/* right: 0; */
+}
+/* ========== END OF UBAH DATA ABSEN JAM ========== */
+
+/* ======== ADDING CSS BY JAVASCRIPT ====== */
+.active {
+	display: flex;
+}
+.grey {
+	background-color: rgb(206, 212, 255);
+	/* color: blue; */
+}
+.yellow {
+	background-color: rgb(243, 243, 109);
+}
+.blue {
+	background-color: rgb(110, 110, 255);
+}
+.btn-green {
+	background-color: rgb(139, 255, 139);
+	color: rgb(0, 124, 0);
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.btn-red {
+	background-color: rgb(255, 116, 116);
+	color: rgb(173, 0, 0);
+	font-weight: bold;
+}
+
+/* ======== ANOTHER ========== */
+.button1 {
+	/* width: fit-content; */
+	/* margin-bottom: 1rem; */
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+	font-size: 12px;
+}
+.body .button1 {
+	width: fit-content;
+}
+.body {
+	display: none;
+}
+.active {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ==== REKAP DATA SEBELUMNYA ==== */
+.container-data-sebelumnya {
+	display: none;
+	height: 100vh;
+	width: 100%;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.container-data-sebelumnya form {
+	width: fit-content;
+	background-color: rgb(206, 212, 255);
+	height: fit-content;
+	padding: 2rem;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+
+	border-radius: 0.3rem;
+}
+.container-data-sebelumnya .group-input {
+	display: flex;
+	/* background-color: red; */
+	padding: 0;
+	justify-content: space-between;
+}
+.input-style-2 {
+	width: 49%;
+	/* margin-right: 5px; */
+	height: 2rem;
+}
+.container-data-sebelumnya .btn-save {
+	margin-top: 0.5rem;
+	width: 100%;
+}

@@ -1,0 +1,458 @@
+.body {
+	/* padding: 20px; */
+	display: none;
+	flex-direction: column;
+	/* background-color: blue; */
+}
+
+/* ===== STYLING HEADER ===== */
+.header {
+	display: none;
+	/* align-items: center; */
+	width: 100%;
+	/* background-color: bisque; */
+	justify-content: space-between;
+	padding: 0;
+}
+header .action {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	/* float: right; */
+	/* background-color: blue; */
+}
+/* ===== END OF STYLING HEADER ===== */
+
+/* ======= STYLING BUTTON ======== */
+.button1 {
+	/* width: fit-content; */
+	/* margin-bottom: 1rem; */
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+.change-button .btn-back {
+	color: rgba(32, 152, 209, 255);
+}
+.detail {
+	width: fit-content;
+	/* margin-bottom: 1rem; */
+	border: none;
+	padding: 0rem 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: rgb(255, 255, 154);
+	color: rgb(169, 169, 0);
+	font-weight: bold;
+}
+.btn-yellow {
+	background-color: rgb(255, 255, 154);
+	color: rgb(169, 169, 0);
+}
+.btn-green {
+	background-color: rgb(139, 255, 139);
+	color: rgb(0, 124, 0);
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.btn-red {
+	background-color: rgb(255, 116, 116);
+	color: rgb(173, 0, 0);
+	font-weight: bold;
+}
+.btn-grey {
+	/* background-color: grey; */
+	color: rgb(49, 49, 49);
+}
+.btn-blue {
+	background-color: rgb(116, 192, 255);
+	color: rgb(20, 0, 173);
+}
+.close {
+	position: relative;
+	margin-left: auto;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	margin-top: 0;
+	/* color: salmon; */
+	/* right: 0; */
+}
+
+/* ======= STYLING FORM DETAIL ======== */
+.container {
+	background-color: grey;
+	padding: 20px 0;
+	display: none;
+	justify-content: center;
+	height: 100%;
+	/* opacity: 50%; */
+}
+.data_form {
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.data_form table {
+	margin-bottom: 1rem;
+}
+.data_form tr td {
+	padding-right: 10px;
+}
+/* ===== END OF STYLING FORM DETAIL ===== */
+
+/* ======= STYLING CONTAINER TAMBAH DATA ========= */
+
+#btn-tambah a {
+	text-decoration: none;
+	color: rgb(175, 175, 4);
+}
+.containerdatabaru {
+	background-color: rgb(228, 228, 228);
+	display: none;
+	position: sticky;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	height: 100vh;
+	/* min-height: fit-content; */
+	position: absolute;
+	width: 100%;
+	top: -20px;
+	left: 0;
+	padding-bottom: 20px;
+
+	/* height: 100vh; */
+}
+.databaru {
+	height: fit-content;
+	width: 50%;
+	border-radius: 0.5rem;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+	padding: 10px 0;
+	background-color: #f7f7f7;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	/* margin-top: 1rem; */
+
+	/* margin-top: 20px; */
+	/* position: absolute; */
+	/* order: 1; */
+	/* top: 30vh;
+	left: 10%; */
+}
+#tambah-data .databaru label {
+	margin-bottom: 5px;
+}
+.input-form {
+	/* box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%); */
+	width: 90%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	/* color: red; */
+}
+#tambah-data .databaru #submit {
+	width: 90%;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: rgba(32, 152, 209, 255);
+	color: white;
+	height: 30px;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 14px;
+	color: white;
+	cursor: pointer;
+}
+.header_tambah_data {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 0px;
+	/* background-color: salmon; */
+}
+/* #close_tambah_data {
+} */
+
+/* ========= END OF TAMBAH DATA =========== */
+
+/* ========== UBAH DATA ABSEN HARIAN ========== */
+.form-ubah-absen-harian {
+	height: fit-content;
+	width: fit-content;
+	border-radius: 0.5rem;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	/* background-color: rgb(224, 224, 224); */
+	background-color: #f7f7f7;
+	color: rgb(36, 36, 36);
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	margin-top: 2rem;
+}
+.group-input {
+	display: flex;
+	/* justify-content: space-between; */
+	width: 90%;
+	padding-left: 20px;
+	/* background-color: red; */
+	margin-bottom: 10px;
+}
+.input-ubah-data {
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+
+	/* width: 20%; */
+	margin-right: 5px;
+	margin-left: 5px;
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	padding-left: 5px;
+}
+.btn-selesai {
+	width: 90%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: rgb(255, 133, 133);
+	color: white;
+	height: 30px;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 14px;
+	color: white;
+}
+.header_ubah_absen_harian {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 0px;
+	/* background-color: salmon; */
+}
+/* ========== END OF UBAH DATA ABSEN HARIAN ========== */
+
+/* ==========  UBAH DATA ABSEN JAM ========== */
+.form-ubah-absen-jam {
+	height: fit-content;
+	width: 50%;
+	border-radius: 0.5rem;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	background-color: #f7f7f7;
+	color: rgb(36, 36, 36);
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	margin-top: 2rem;
+}
+.header_ubah_absen_jam {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 0px;
+	/* background-color: salmon; */
+}
+/* ========== END OF UBAH DATA ABSEN JAM ========== */
+
+/* ========== STYLING FORM LIST BULAN ========== */
+.container-list-bulan {
+	display: none;
+	flex-direction: column;
+	padding: 1rem 2rem;
+	background-color: white;
+	width: fit-content;
+	height: fit-content;
+	border-radius: 0.5rem;
+	position: absolute;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	/* margin-top: 5rem; */
+	/* padding: 10px; */
+}
+.container-list-bulan h4 {
+	/* background-color: red; */
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.container-list-bulan a {
+	text-decoration: none;
+	color: black;
+}
+.container-list-bulan a :hover {
+	color: blue;
+}
+
+.container-list-bulan p {
+	margin: 5px;
+}
+
+.header-list-bulan,
+.header-list-pegawai {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 0px;
+	margin-top: 0;
+	margin-right: 0;
+	/* background-color: salmon; */
+	/* right: 0; */
+}
+.container-list-bulan .header-list-bulan {
+	/* background-color: salmon; */
+	margin-bottom: 1rem;
+}
+.container-list-bulan hr {
+	width: auto;
+}
+.group-input {
+	display: flex;
+	justify-content: space-between;
+	/* background-color: red; */
+	padding: 0;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.group-input .tahun {
+	margin-right: 0.3rem;
+	margin-left: 0.3rem;
+}
+.group-input input,
+.group-input select {
+	height: 2rem;
+	width: 100%;
+	padding-left: 0.5rem;
+}
+
+/* ========== END OF STYLING FORM LIST BULAN ========== */
+
+/* ==========  STYLING LIST DATA PEGAWAII ========== */
+.container-ubah-data-pegawai {
+	width: fit-content;
+	height: fit-content;
+	background-color: white;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	flex-direction: column;
+	display: none;
+	position: absolute;
+	margin-top: 20px;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.container-ubah-data-pegawai p {
+	margin-bottom: 15px;
+	/* background-color: blue; */
+}
+.container-ubah-data-pegawai a {
+	text-decoration: none;
+	color: black;
+}
+.container-ubah-data-pegawai hr {
+	/* margin-bottom: 1rem; */
+	color: black;
+}
+.list-pegawai1 {
+	display: inline;
+	flex-direction: row;
+	color: black;
+	width: 100%;
+	/* background-color: blue; */
+	border: none;
+	/* border-top: 1px solid black; */
+	/* margin-top: 1rem; */
+	/* margin-top: 1rem; */
+	/* justify-content: space-between; */
+}
+.list-pegawai1 .action-pegawai {
+	display: flex;
+	/* justify-content: space-between; */
+	/* width: 100%; */
+	/* background-color: tomato; */
+	float: right;
+	/* align-items: flex-end; */
+	margin-right: auto;
+	/* margin-left: 20px; */
+}
+.action-pegawai a {
+	margin-left: 0.3rem;
+}
+.hapus {
+	/* float: right; */
+	color: white;
+}
+.container-ubah-data-pegawai hr {
+	border: none;
+	/* border-top: 1px solid black; */
+}
+.container-ubah-data-pegawai h2 {
+	margin-top: 5px;
+}
+
+/* ========== END OF STYLING LIST DATA PEGAWAII ========== */
+
+/* ==========  ANOTHER ========== */
+.bold {
+	font-weight: bold;
+}
+.active {
+	display: flex;
+}
+.bisque {
+	background-color: rgb(206, 212, 255);
+}
+.test-style {
+	width: 100px;
+	height: 50px;
+}
+
+/* ====== POP HAPUS =========  */
+.pop-hapus {
+	background-color: white;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	padding: 2rem;
+	border-radius: 0.5rem;
+	display: none;
+}
+.action {
+	padding: 0.3rem 1rem;
+	margin-right: 0.3rem;
+	border-radius: 0.4rem;
+	border: none;
+	cursor: pointer;
+}
+.button {
+	margin-top: 0.5rem;
+}
+.action-batal {
+	background-color: rgba(209, 0, 32, 255);
+	border: 1px solid rgba(209, 0, 32, 255);
+	color: white;
+	cursor: pointer;
+}

@@ -1,0 +1,241 @@
+* {
+	font-family: "poppins";
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	padding: 20px 30px;
+	width: 100vw;
+	/* background-color: bisque; */
+}
+body h1 {
+	font-size: 40px;
+	font-weight: 600px;
+}
+.title-header {
+	font-weight: bold;
+}
+table {
+	border-collapse: collapse;
+	margin-bottom: 1rem;
+}
+table tr td,
+table tr th {
+	padding: 0.2rem 0.4rem;
+}
+table .center {
+	text-align: center;
+	/* align-items: center;
+	justify-content: center; */
+}
+.judul_aplikasi {
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	justify-content: center;
+	cursor: pointer;
+	width: 150px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	/* background-color: green; */
+}
+.action-button {
+	padding-top: 0;
+}
+.action-button a {
+	/* font-family: arial; */
+	text-decoration: none;
+}
+.button-style {
+	width: 170px;
+	height: 50px;
+	font-size: 24px;
+	border: 0px solid;
+	border-radius: 20px;
+	opacity: 50%;
+}
+
+/* ============= COLORING ================ */
+.bg-red {
+	background-color: rgb(255, 169, 169);
+
+	/* opacity: 50%; */
+}
+.bg-green {
+	background-color: rgb(139, 255, 139);
+	color: rgb(0, 124, 0);
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.red {
+	color: rgb(201, 5, 5);
+}
+.green {
+	color: rgb(1, 100, 1);
+}
+.ye-op50 {
+	background-color: rgb(255, 245, 103);
+}
+.red-op50 {
+	background-color: rgb(255, 133, 133);
+}
+.action {
+	padding: 0.3rem 1rem;
+	margin-right: 0.3rem;
+	border-radius: 0.4rem;
+	border: none;
+	cursor: pointer;
+}
+button {
+	cursor: pointer;
+}
+button a {
+	text-decoration: none;
+	color: rgb(80, 0, 0);
+}
+.kembali {
+	padding: 0.5rem 1rem;
+	/* background-color: rgb(255, 116, 116); */
+	border-radius: 10px;
+	cursor: pointer;
+	/* border: none; */
+	text-decoration: none;
+	color: rgba(32, 152, 209, 255);
+	border: 1px solid rgba(32, 152, 209, 255);
+	background-color: white;
+	/* cursor: pointer; */
+}
+/* .kembali {
+} */
+.btn {
+	font-size: 14px;
+	padding: 0.2rem 0.5rem;
+	border-radius: 0.2rem;
+	cursor: pointer;
+}
+.btn-save {
+	background-color: rgba(32, 152, 209, 255);
+	border: 1px solid rgba(32, 152, 209, 255);
+	color: white;
+	cursor: pointer;
+}
+.btn-hapus {
+	background-color: rgb(255, 133, 133);
+	/* color: rgb(80, 72, 0); */
+	/* color: white; */
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-detail {
+	background-color: rgb(241, 255, 133);
+	color: rgb(80, 0, 0);
+	/* color: white; */
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-back {
+	border: 1px solid rgba(32, 152, 209, 255);
+	background-color: white;
+	cursor: pointer;
+	/* color: red; */
+	color: rgba(32, 152, 209, 255);
+}
+.cetak {
+	font-size: 16px;
+	/* font-weight: 100px; */
+}
+.active {
+	display: flex;
+	/* flex-direction: column; */
+}
+
+/* =========== FORM ISI =========== */
+
+.input-style {
+	width: 2.5rem;
+	/* background-color: red; */
+	border: 1px solid black;
+	border-radius: 0.2rem;
+	height: 2rem;
+	padding-left: 0.3rem;
+}
+.id-style {
+	width: 2.5rem;
+	height: 2rem;
+	display: none;
+}
+.bulan-style {
+	width: 8rem;
+	height: 2rem;
+}
+.tahun-style {
+	height: 2rem;
+	width: 4rem;
+}
+.name-style {
+	height: 2rem;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+/* ==========  */
+.list-nama {
+	background-color: white;
+	color: none;
+	border: none;
+	cursor: pointer;
+}
+.list-nama:hover {
+	color: blue;
+}
+
+/* ======= KETERANGAN ======= */
+.keterangan2 {
+	margin-bottom: 1rem;
+}
+.keterangan2 li {
+	list-style: none;
+}
+
+/* ======== PER TTD AN ======== */
+.ttd {
+	/* background-color: azure; */
+	margin-top: 2rem;
+	padding: 0 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+.ttd .kiri {
+	/* background-color: red; */
+	width: fit-content;
+}
+.ttd .kanan {
+	width: fit-content;
+	/* float: right; */
+	/* background-color: blue; */
+}
+.ttd .tulisan {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	/* background-color: red; */
+	text-align: center;
+}
+.ttd .nama {
+	font-weight: bold;
+}
+.ttd .kanan-prodi {
+	margin-left: auto;
+}
+/* .logo {
+	height: 1rem;
+} */

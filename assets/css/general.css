@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+.none {
+	display: none;
+}
+.red {
+	color: red;
+	/* background-image: red;
+	background-color: red;
+	background-image: red; */
+	background: var(--second-color);
+}
+
+/* ========== RADIO STYLING =============== */
+.radios {
+	display: flex;
+	flex-direction: row;
+}
+.radio {
+	width: 25px;
+	height: 25px;
+	border: 2px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	border-radius: 50px;
+}
+.circle {
+	width: 15px;
+	height: 15px;
+	background-color: green;
+	border-radius: 50px;
+	/* border-color: black;
+	border-style: outset;
+	width: 50px; */
+}
+.radio input {
+	/* display: none; */
+}
+.radio input:checked ~ .radio .circle {
+	/* display: none; */
+	background-color: red;
+}
+
+.logo {
+	height: 1rem;
+}

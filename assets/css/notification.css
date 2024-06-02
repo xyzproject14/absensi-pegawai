@@ -1,0 +1,63 @@
+.notif-body {
+	width: max-content;
+	font-family: "Poppins";
+	height: max-content;
+	padding: 10px 20px;
+	background-color: rgb(139, 255, 139);
+	color: rgb(0, 124, 0);
+	font-weight: bold;
+	border-radius: 5px;
+	margin-bottom: 10px;
+
+	display: flex;
+	flex-direction: column;
+}
+.notif-body-danger {
+	width: max-content;
+	font-family: "Poppins";
+	height: max-content;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	display: flex;
+	background-color: rgb(255, 116, 116);
+	color: rgb(158, 2, 2);
+	margin-bottom: 10px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.test-notif {
+	width: max-content;
+	font-family: "Poppins";
+	height: max-content;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: rgb(255, 116, 116);
+	color: rgb(158, 2, 2);
+	margin-bottom: 10px;
+
+	display: flex;
+	flex-direction: column;
+}
+.notif {
+	display: flex;
+}
+.notif span {
+	font-weight: 100;
+	font-size: 11px;
+}
+
+.btn-save {
+	background-color: rgba(32, 152, 209, 255);
+	border: 1px solid rgba(32, 152, 209, 255);
+	color: white;
+	cursor: pointer;
+}
+.btn-back {
+	border: 1px solid rgba(32, 152, 209, 255);
+	background-color: white;
+	cursor: pointer;
+}

@@ -1,0 +1,27 @@
+h1 {
+	color: blue;
+}
+nav {
+	/* background-color: red; */
+}
+
+nav .nav {
+	display: flex;
+	/* flex-direction: column; */
+}
+nav .nav li {
+	margin-right: 1rem;
+	list-style: none;
+}
+
+nav .nav li ul {
+	display: none;
+}
+
+.list:hover {
+	color: red;
+}
+.list:hover .dropdown {
+	display: block;
+	/* color: red; */
+}

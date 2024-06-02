@@ -1,0 +1,56 @@
+body {
+	background-color: salmon;
+}
+.header {
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: column;
+	align-items: center;
+	/* background-color: red; */
+	padding: 0px;
+	margin-bottom: 0px;
+}
+.header h2 {
+	margin-bottom: 0px;
+}
+.body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0px;
+
+	/* background-color: blue; */
+}
+
+.form {
+	background-color: white;
+	padding: 2rem;
+	border-radius: 0.2rem;
+}
+/* .form span{} */
+
+.input-style {
+	width: 2.5rem;
+	/* background-color: red; */
+	border: 1px solid black;
+	border-radius: 0.2rem;
+	height: 2rem;
+	padding-left: 0.3rem;
+}
+.id-style {
+	width: 2.5rem;
+	height: 2rem;
+	display: none;
+}
+.bulan-style {
+	width: 8rem;
+	height: 2rem;
+}
+.tahun-style {
+	height: 2rem;
+	width: 4rem;
+}
+table {
+	margin-top: 1rem;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/radio.css" />
+		<title>Radio</title>
+	</head>
+	<body>
+		<h1>Radio Button</h1>
+		<div class="radio">
+			<label for="radio1" class="radio">
+				<input
+					type="radio"
+					name="radio-test"
+					id="radio1"
+					class="radio__input"
+				/>
+				<div class="radio__radio green"></div>
+				Visual studio code
+			</label>
+
+			<label for="radio2" class="radio">
+				<input
+					type="radio"
+					name="radio-test"
+					id="radio2"
+					class="radio__input"
+				/>
+				<div class="radio__radio red"></div>
+				Visual studio code
+			</label>
+			<!-- <label for="radio2" class="divradio">
+				<input type="radio" name="radio-test" id="radio2" />
+				<span class="lingkaran-dalam"></span>
+			</label> -->
+		</div>
+
+		<h1>Radio Button 2</h1>
+		<div class="radio2">
+			<label for="radiobut1" class="labelradio">
+				<input class="radioinput" type="radio" name="radiobut" id="radiobut1" />
+				<div class="inner_circle"></div>
+			</label>
+			<label for="radiobut2" class="labelradio">
+				<input class="radioinput" type="radio" name="radiobut" id="radiobut2" />
+				<div class="inner_circle"></div>
+			</label>
+		</div>
+
+		<!-- ======== MY NEW RADIO =========-->
+		<div class="isi_absen">
+			<div class="baris">
+				<span>Ahmad ilham B</span>
+				<!-- Hadir -->
+				<label for="hadir1" class="radio">
+					<input
+						type="radio"
+						name="radio-test"
+						id="hadir1"
+						class="radio__input"
+					/>
+					<div class="radio__radio green"></div>
+				</label>
+
+				<!-- S -->
+				<label for="sakit1" class="radio">
+					<input
+						type="radio"
+						name="radio-test"
+						id="sakit1"
+						class="radio__input"
+					/>
+					<div class="radio__radio yellow"></div>
+				</label>
+
+				<!-- DL -->
+				<label for="DL1" class="radio">
+					<input type="radio" name="radio-test" id="DL1" class="radio__input" />
+					<div class="radio__radio grey"></div>
+				</label>
+
+				<!-- ==== Tap ==== -->
+				<label for="Tap1" class="radio">
+					<input
+						type="radio"
+						name="radio-test"
+						id="Tap1"
+						class="radio__input"
+					/>
+					<div class="radio__radio red"></div>
+				</label>
+			</div>
+		</div>
+
+
+		<!-- ====== PINDAHAN DARI TESTING ======= -->
+		<h1>Test aja</h1>
+
+
+		<hr>
+		<!-- ================================ -->
+		<!-- <table>
+			<?php foreach ($user as $data) : ?>
+				<tr>
+					<td>
+						<?= $data['name'] ?>
+					</td>
+					<td class="tambah-data">
+						<div class="radios">
+							<label class="radio">
+								<input id="<?php echo $data['id'] ?>" class="red" type="radio" name="<?php echo $data['id'] ?>" value="1"><label class="circle"></label>
+							</label>
+	
+							<label class="radio">
+								<input id="<?php echo $data['id'] ?>" class="red" type="radio" name="<?php echo $data['id'] ?>" value="1"><label class="circle"></label>
+							</label>
+	
+	
+						</div>
+					</td>
+					<td>anak Unhas</td>-->
+	
+		<!-- ========= PAGE JAM ========== -->
+		<!-- <td>
+						<span id='<?= $data['id'] ?>'><?= $data['id'] ?></span>
+					</td>
+					<td>
+						<div>
+							<button>-</button>
+							<span>5</span>
+							<button>+</button>
+						</div>
+	
+					</td> -->
+		<!-- ================= PAGE JAM ======== -->
+		</tr>
+	<?php endforeach ?>
+	</table> -->
+	
+	<!-- <h1>Input absensi</h1>
+	<form action="<?= base_url('testing/input_data') ?>" method="post">
+	
+		<label for="">Nama :</label>
+		<input type="text" name="nama"><br><br>
+	
+		<label for="">Umur : </label>
+		<input type="text" name="umur"><br><br>
+	
+		<label for="">Hobi</label>
+		<input type="text" name="hobi"><br><br>
+	
+		<input type="submit" value="Submit" name="tambah_data">
+	</form>
+	
+	<hr>
+	<h1>Buat 2 Ell ganteng</h1>
+	
+	<div class="table">
+		<table border="1" class="pertablean">
+			
+		</table>
+	
+	</div> -->
+	
+	<hr>
+	
+	<div class="perkumpulan-radio">
+		<h1 id="radios">update testing</h1>
+	
+		<form action="testing/update_auto" method="post">
+			<?= $update ?><br>
+			<input type="number" name="hari">
+			<input type="submit" value="update">
+		</form>
+	
+	</div>
+	<br><br>
+	
+	</body>
+</html>

@@ -1,0 +1,526 @@
+.header {
+	display: none;
+	justify-content: space-between;
+	padding: 0;
+
+	/* background-color: antiquewhite; */
+}
+
+.body {
+	display: none;
+	flex-direction: column;
+	/* background-color: red; */
+}
+
+.button {
+	font-weight: bold;
+}
+.button span {
+	position: absolute;
+	font-size: 24px;
+	font-weight: bold;
+	/* margin-bottom: 5px; */
+}
+
+/* ======== ISI ABSEN ========= */
+.isi-absen {
+	background-color: salmon;
+	height: 100vh;
+}
+.isi-absen form #isi {
+	/* color: white; */
+}
+/* ======== END OF ISI ABSEN ========= */
+
+/* ========= STYLE RADIO ========= */
+.radio {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	/* background-color: red;
+	border: 2px solid black; */
+	margin-right: 10px;
+}
+.radio__input {
+	display: none;
+}
+.radio__radio {
+	width: 1.25em;
+	height: 1.25em;
+	border-radius: 50%;
+	margin-right: 10px;
+	box-sizing: border-box;
+	padding: 3px;
+}
+.radio__radio::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: red;
+	border-radius: 50%;
+
+	transform: scale(0);
+	transition: transform 0.15s;
+}
+.red {
+	border: 2px solid rgb(226, 132, 132);
+}
+.red::after {
+	background-color: red;
+}
+.blue {
+	border: 2px solid rgb(110, 143, 208);
+}
+.blue::after {
+	background-color: rgb(0, 102, 255);
+}
+.green {
+	border: 2px solid rgb(94, 203, 94);
+}
+.green::after {
+	background-color: green;
+}
+.yellow {
+	border: 2px solid rgb(207, 215, 97);
+}
+.yellow::after {
+	background-color: yellow;
+}
+.grey {
+	border: 2px solid rgb(173, 171, 171);
+}
+.grey::after {
+	background-color: grey;
+}
+
+.radio__input:checked + .radio__radio::after {
+	transform: scale(1);
+}
+.isi_absen {
+	background-color: white;
+	/* border: 2px solid grey; */
+	border-radius: 0.3rem;
+	width: fit-content;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	padding: 2rem;
+}
+.isi_absen .baris {
+	/* width: fit-content; */
+	/* background-color: red; */
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.isi_absen .baris span {
+	/* background-color: blue; */
+	margin-right: 20px;
+}
+.container {
+	background-color: rgba(8, 8, 8, 0.5);
+	opacity: 50%;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.containerisiabsen {
+	background-color: rgb(206, 212, 255);
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.container_form {
+	/* background-color: blue; */
+	width: 100%;
+	left: 0;
+	height: 100vh;
+	padding: 20px;
+	/* position: absolute; */
+	top: 0;
+	/* margin-top: 10px; */
+	display: none;
+	/* background-color: slateblue; */
+	justify-content: center;
+	align-items: center;
+}
+.isi_absen {
+	/* position: absolute; */
+	top: 0;
+
+	/* display: flex; */
+}
+.isi_absen a {
+	text-decoration: none;
+	color: black;
+}
+.isi_absen .baris a:hover {
+	color: blue;
+}
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ====== STYLING TABLE ======= */
+td,
+th {
+	border: 1px solid black;
+}
+
+/* ========== STYLING FORM TAMBAH ABSEN HARIAN ======== */
+.btn-forms {
+	display: flex;
+}
+.btn-forms a {
+	margin-right: 0.3rem;
+	color: rgba(32, 152, 209, 255);
+}
+.btn-form {
+	width: max-content;
+	height: 2rem;
+	border-radius: 0.5rem;
+	border: none;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	/* font-weight: bold;
+	font-size: 30px; */
+	margin-right: 0.5rem;
+	/* padding: 0.5rem; */
+}
+.bg-red {
+	background-color: rgb(226, 132, 132);
+	color: rgb(129, 4, 4);
+}
+.bg-green {
+	background-color: rgb(94, 203, 94);
+	color: rgb(0, 89, 0);
+}
+.td-yellow {
+	background-color: rgb(243, 243, 109);
+}
+.td-red {
+	background-color: rgb(206, 212, 255);
+	/* background-color: rgb(226, 132, 132); */
+}
+.keterangan {
+	display: flex;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	justify-content: space-between;
+}
+.ket-kanan {
+	margin-right: 1rem;
+}
+.keterangan ul {
+	display: flex;
+}
+.keterangan ul li {
+	margin-left: 0.7rem;
+}
+.keterangan .ket-kiri span {
+	font-weight: bold;
+}
+.isi_absen hr {
+	margin-bottom: 0.6rem;
+}
+
+/* ====== STYLING TABLE ======= */
+
+/* ========	STYLING UNDER TABEL ======== */
+ul li {
+	list-style: none;
+	text-decoration: none;
+	/* font-weight: bold; */
+}
+ul .izin {
+	margin-right: 0.5rem;
+}
+ul .hadir {
+	margin-right: -0.3rem;
+}
+.keterangan,
+ul {
+	display: flex;
+	flex-direction: column;
+}
+.footer {
+	display: none;
+}
+.footer button {
+	min-width: fit-content;
+	height: fit-content;
+	margin-left: 0.5rem;
+	/* flex-wrap: nowrap; */
+}
+
+/* ========== UBAH DATA ABSEN HARIAN ========== */
+.containerdatabaru {
+	background-color: white;
+	display: none;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	align-items: center;
+}
+
+.form-ubah-absen-harian {
+	height: fit-content;
+	width: 50%;
+	border-radius: 0.5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 1rem;
+	background-color: rgb(242, 242, 242);
+	color: rgb(36, 36, 36);
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	margin-top: 2rem;
+}
+.group-input {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 5px;
+}
+.input-ubah-data {
+	width: 23%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	padding-left: 5px;
+}
+.btn-selesai {
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: rgb(255, 133, 133);
+	color: white;
+	height: 30px;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 14px;
+	color: white;
+}
+.header_ubah_absen_harian {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	/* float: right; */
+	top: 0px;
+	/* background-color: salmon; */
+}
+.close {
+	position: relative;
+	margin-left: auto;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	font-size: 2z4px;
+	/* right: 0; */
+}
+.input-form {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	padding-left: 5px;
+	/* color: red; */
+}
+/* ========== END OF UBAH DATA ABSEN HARIAN ========== */
+
+/* ========== TAMBAH DATA PEGAWAI BARU ========== */
+.containertambahdata {
+	background-color: white;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+}
+.form-tambahdata {
+	background-color: rgb(242, 242, 242);
+	padding: 2rem;
+	width: 50%;
+	border-radius: 0.5rem;
+	height: fit-content;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+	/* margin-top: 2rem; */
+}
+.input-form {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	padding-left: 5px;
+	/* color: red; */
+}
+#btn-tambah {
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: rgba(32, 152, 209, 255);
+	color: white;
+	height: 30px;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 14px;
+	color: white;
+}
+.header_tambah_data {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 0px;
+	/* background-color: salmon; */
+}
+
+/* ========== END OF TAMBAH DATA PEGAWAI BARU ========== */
+
+/* ========= CONTAINER REKAP BULAN SEBELUMNYA ========= */
+.rekap-data-pegawai {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+.form-rekap {
+	padding: 2rem;
+	border-radius: 0.5rem;
+	background-color: rgb(242, 242, 242);
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.form-rekap hr {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.input-rekap {
+	display: flex;
+}
+.tahun-rekap {
+	margin-left: 0.5rem;
+}
+/* ========= END OF CONTAINER REKAP BULAN SEBELUMNYA ========= */
+
+/* ======= ubah data pegawai ========= */
+.main-container-ubah-data {
+	height: 100vh;
+	width: 100%;
+	display: none;
+	justify-content: center;
+	/* align-items: center; */
+	background-color: rgb(242, 242, 242);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.container-ubah-data-pegawai {
+	width: fit-content;
+	height: fit-content;
+	background-color: white;
+	padding: 1rem 2rem;
+	padding-bottom: 3rem;
+	border-radius: 0.5rem;
+	flex-direction: column;
+	display: flex;
+	margin-top: 2rem;
+	position: absolute;
+	/* margin-top: 20px; */
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.container-ubah-data-pegawai p {
+	margin-bottom: 15px;
+	/* background-color: blue; */
+}
+.container-ubah-data-pegawai a {
+	text-decoration: none;
+	color: black;
+}
+.container-ubah-data-pegawai hr {
+	/* margin-bottom: 1rem; */
+	color: black;
+}
+.list-pegawai1 {
+	display: inline;
+	flex-direction: row;
+	color: black;
+	width: 100%;
+	/* background-color: blue; */
+	border: none;
+	/* border-top: 1px solid black; */
+	/* margin-top: 1rem; */
+	/* margin-top: 1rem; */
+	/* justify-content: space-between; */
+}
+.list-pegawai1 .action-pegawai {
+	display: flex;
+	/* justify-content: space-between; */
+	/* width: 100%; */
+	/* background-color: tomato; */
+	float: right;
+	/* align-items: flex-end; */
+	margin-right: auto;
+	/* margin-left: 20px; */
+}
+.action-pegawai a {
+	margin-left: 0.3rem;
+}
+.hapus {
+	/* float: right; */
+	color: white;
+}
+.container-ubah-data-pegawai hr {
+	border: none;
+	/* border-top: 1px solid black; */
+}
+.container-ubah-data-pegawai h2 {
+	margin-top: 5px;
+}
+.header-list-pegawai {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 0px;
+	margin-top: 0;
+	margin-right: 0;
+}

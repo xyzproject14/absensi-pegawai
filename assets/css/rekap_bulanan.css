@@ -1,0 +1,17 @@
+* {
+	font-family: "Poppins";
+}
+button {
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: rgb(116, 192, 255);
+}
+
+a {
+	/* re */
+	color: rgb(20, 0, 173);
+	text-decoration: none;
+}
